@@ -1,0 +1,68 @@
+div.preview {
+    
+    width: 300px;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: row;;
+    box-shadow: 0px 82px 82px -61px rgba(15, 15, 15, 0.10), 0px -82px 80px 0px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border-radius: 30px;
+    div {
+       width: 150px;
+       text-align: center; 
+       p {
+        color: var(--neutrals-4, #777E90);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px; 
+       }
+    }
+    img[alt='nft'], video[alt='nft'] {
+        height: 300px;
+       }
+
+    
+}
+
+div.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    div.upload-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin-left: 10%;
+        cursor: pointer;
+        height: 20px;
+        border: none;
+        border-radius: 12px;
+        color: #FFF;
+        background-color: #141416;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 100%;
+        padding: 23px;
+        margin-top: 50px;
+        margin-bottom: 150px;
+        position: relative;
+        top: 0;
+        transition: all 0.5s .1s ease;
+    
+        &:hover {
+            top: -5px;
+            -webkit-box-shadow: 0px 18px 16px 1px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 0px 18px 16px 1px rgba(34, 60, 80, 0.2);
+            box-shadow: 0px 18px 16px 1px rgba(34, 60, 80, 0.2);
+        }
+    }
+}

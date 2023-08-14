@@ -1,0 +1,119 @@
+div.me-info {
+    width: fit-content;
+    position: relative;
+    top: -180px;
+    width: 400px;
+    
+    img[alt='me-photo'] {
+        width: 160px;
+        height: 160px;
+        border: 5px solid #F9F9F9;
+        border-radius: 50%;
+        background-color: #F9F9F9;
+    }
+    .me-name {
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+        h2 {
+            padding-top: 0;
+            text-align: start;
+            color: #010101;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: Outfit;
+            line-height: 100%;
+        }
+        button {
+            background-color: red;
+            color: black;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 15px;
+            border-radius: 11px;
+            border: none;
+            padding: 12px 22px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: fit-content;
+            cursor: pointer;
+            position: relative;
+            left: 0;
+            top: 0;
+            transition: left 0.5s .1s ease;
+
+            &:hover {
+                left: 0.5vw;
+            }
+            
+            img {
+                background-color: none;
+                border: none;
+                border-radius: none;
+                height: 25px;
+                
+            }
+        }
+    }
+    .line {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 1px;
+        background-color: #D0D0D0;
+    }
+    .follows {
+        display: flex;
+        gap: 5vw;
+        margin: 10px 0 50px 0;
+
+        .info-hu {
+            h3 {
+                font-size: 32px;
+                font-family: Sans;
+                color: #141416;
+                margin: 0;
+                
+            }
+            p {
+                color: #848586;
+                font-family: Inter;
+                font-size: 11px;
+            }
+        }
+    }
+    .bio {
+        h4 {
+            color: #C5C5C5;
+            font-weight: 700;
+            font-size: 25px;
+            font-family: Sans;
+        }
+        p {
+            color: #949494;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: Poppins;
+            line-height: 177%;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    div.me-info#me-info {
+        width: 90vw;
+        position: relative;
+        top: -70px;
+        
+        img[alt='me-photo'] {
+            width: 100px;
+            height: 100px;
+            border: 5px solid #F9F9F9;
+            border-radius: 50%;
+            background-color: #F9F9F9;
+        }
+        .follows {
+            justify-content: center;
+        }
+    }
+}

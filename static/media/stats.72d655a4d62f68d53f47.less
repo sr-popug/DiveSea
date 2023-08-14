@@ -1,0 +1,118 @@
+article.stats {
+    background: #F9F9F9;
+    padding-bottom: 150px;
+
+    h2.Top {
+        font-weight: 600;
+        padding: 100px 0 50px 0;
+        color: #141416;
+    }
+    table {
+        width: 80vw;
+        margin: 10px 10vw;
+        border-collapse: collapse;
+
+        tr {
+            border-bottom: 2px solid #EBE9E9; 
+            transition: all 0.5s .1s ease;
+            &:nth-child(1) {
+                border: none;
+            }
+
+            th {
+                color: #1A202C;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                padding: 20px auto;
+                
+                
+                &:not(:nth-child(1)):hover {
+                    background-color: #eeeeee;
+                }
+            }
+            th:nth-child(1) {
+                cursor: default;
+                color: #93989A;
+            }
+
+            td {
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 0;
+                    flex-wrap: wrap;
+                }          
+            }
+            td.name {
+                div {
+                    justify-content: start;
+                    gap: 20px;
+                    
+                    img {
+                        border-radius: 50%;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    div.name-info {
+                        display: block;
+
+                        .name {
+                            font-weight: 600;
+                            font-size: 22px;
+                            color: #141416;
+                            line-height: 100%;
+                        }
+                        .by {
+                            font-size: 17px;
+                            font-weight: 400;
+                            color: #64748B;
+                            line-height: 20%;
+                        }
+                    }
+                }
+            }
+            td.volume {
+                color: black;
+                font-weight: 700;
+                padding: 0;
+                div {
+                    padding: 0;
+                }
+                p.hide-elem {
+                    display: none;
+                    color:#10C352;
+                    font-weight: 600;
+                    font-size: 15px;
+                    margin: 0;
+                }
+            }
+            td.procent {
+                color:#10C352;
+                font-weight: 600;
+            }
+            td.price {
+                color: black;
+                font-weight: 700;
+            }
+            td.owners {
+                color: black;
+                font-weight: 600;
+            }
+            td.items {
+                color: black;
+                font-weight: 600;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    article.stats {
+        table {
+            width: 100vw;
+            margin: 0;
+            border-collapse: collapse;
+        }  
+    } 
+}

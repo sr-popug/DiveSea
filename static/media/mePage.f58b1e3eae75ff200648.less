@@ -1,0 +1,35 @@
+article.mePage {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #F9F9F9;
+   
+
+    img[alt='bg'] {
+        width: 90vw;
+        margin: 0 0 0 5vw ;
+        border-radius: 22px;
+    }
+    .content {
+        display: flex; 
+        flex-wrap: wrap;
+        gap: 5vw;   
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 830px) {
+    .mePage#mePage {
+        img[alt='bg'] {
+            width: 120vw;
+            height: 55vw;
+            position: relative;
+            left: -5vw;
+            margin-left: 0;
+        }
+        .content {
+            margin-top: 0px;
+            position: relative;
+            top: -25px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+article.creators {
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: #f9f9f9;
+
+    h2 {
+        color: #141419;
+    }
+
+    div.creators-list {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+        margin-top: 100px;
+
+        a.creator {
+            border-radius: 25px;
+            overflow: hidden;
+            width: 350px;
+            height: 475px;
+            box-shadow: 30px 15px 80px 0px rgba(191, 191, 191, 0.60);
+            background: #f2f2f2;
+            transition: all 0.5s .1s ease;
+            position: relative;
+            top: 0;
+
+            &:hover {
+                box-shadow: 30px 15px 80px 0px rgba(191, 191, 191, 1);
+                top: -10px;
+                background: #f9f9f9;
+            }
+
+            img[alt='bg'] {
+                width: 100%;
+                height: 150px;
+            }
+
+            
+            div.info {
+                position: relative;
+                top: -60px;
+                padding: 20px;
+                .profile-photo {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        border-radius: 50%;
+                        border: 6px solid #fff;
+                        width: 100px;
+                        background-color: #fff;
+                    }
+                }
+                h3 {
+                    color: black;
+                    font-family: Poppins;
+                    font-size: 23px;
+                    text-align: center;
+                    font-weight: 600;
+                    line-height: 0px;
+                }
+
+                .info-hr {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+
+                    .col {
+                        margin-bottom: 20px;
+                        .var {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 5px;
+                            height: 25px;
+
+                            h5 {
+                                color: #141416;
+                                text-align: center;
+                                font-family: Poppins;
+                                font-size: 17px;
+                                font-weight: 600;
+                                line-height: 10px;
+                                margin: 0;
+                            }
+                        }
+                        p {
+                            color: #828282;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 12px; 
+                        }
+                    }   
+                }
+                .works {
+                    display: flex;
+                    justify-content: center;
+                    gap: 5px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

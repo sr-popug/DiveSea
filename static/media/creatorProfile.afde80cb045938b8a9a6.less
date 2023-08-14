@@ -1,0 +1,45 @@
+.mePage {
+    img.bg[alt='bg'] {
+        width: 85vw;
+        height: 23vw;
+        margin-left: 7.5vw;
+        margin-top: 2.5vw;
+        box-shadow: 15px 15px 53px 0px rgba(0, 0, 0, 0.12);
+    }
+    .content {
+        margin-top: 75px;
+    }
+
+    .creator-info {
+        .me-name {
+            button {
+                background-color: black;
+                color: white;
+                font-weight: 400;
+                top: 0px;
+
+                &:hover {
+                    top: -3px;
+                    left: 0;
+                }
+            }
+            button.following {
+                background-color: #141416;
+            }
+        }
+    }
+}
+@media screen and (max-width: 830px) {
+    .mePage {
+        img.bg[alt='bg'] {
+            width: 110vw;
+            height: 46vw;
+            position: relative;
+            left: -5vw;
+            margin-left: 0;
+        }
+        .content {
+            margin-top: 25px;
+        }
+    }
+}

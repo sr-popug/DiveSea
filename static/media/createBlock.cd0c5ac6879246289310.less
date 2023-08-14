@@ -1,0 +1,87 @@
+article.createBlock {
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div.cart {
+        margin: 150px 0;
+        background-color: #141416;
+        width: calc(80vw - 71px);
+        padding: 5px 5px 5px 66px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 30px;
+        flex-wrap: wrap-reverse;
+
+        .info {
+            h2 {
+                font-size: 45px;
+                text-align: left;
+                color: #fff;
+                margin: 0;
+                line-height: 100%;
+                padding: 0;
+            }
+            p {
+                color: #D4D4D4;
+                font-family: Poppins;
+                font-size: 20.265px;
+                opacity: 0.6;
+                font-weight: 500;
+                padding-bottom: 20px;
+            }
+
+            .btns-bottom {
+                display: flex;
+                gap: 30px;
+                .btn {
+                    font-size: 14px;
+                    border-radius: 12.2px;
+                    font-weight: 700;
+                    padding: 20px 25px;
+                    cursor: pointer;
+                    transition: all 0.5s .1s ease;
+                    position: relative;
+                    top: 0px;
+
+                    &:hover {
+                        filter: drop-shadow(0px 5px 1px white);
+                        top: -3px
+                    }
+                }
+                .btn-1 {
+                    color: #141416;
+                    background: white;
+                    border: 2.3px solid white;
+                }
+                .btn-2 {
+                    color: white;
+                    background: #141416;
+                    border: 2.3px solid white;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+ .createBlock {
+    .cart#cart {
+        text-align: center;
+        width: 88vw;
+        padding: 20px 10px;
+        justify-content: center;
+        .btns-bottom {
+            justify-content: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        img {
+            width: 100vw;
+        }
+    }
+ }
+
+}

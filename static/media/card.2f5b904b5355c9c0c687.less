@@ -1,0 +1,202 @@
+div.card {
+    width: 86vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    background: #F9F9F9;
+
+    button.back {
+        background: none;
+        padding: 10px 10px 10px 0;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        color: #23262F;
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        border: none;
+        cursor: pointer;
+        transition: left 0.5s .1s ease;
+        position: relative;
+        left: 0;
+
+        &:hover {
+            left: -10px;
+        }
+    }
+
+    div.place {
+        border-radius: 24.423px;
+        background: #FAFAFA;
+        box-shadow: 17.5px 17.5px 61px 0px rgba(0, 0, 0, 0.12);
+        width: calc(86vw - 36px * 2);
+        display: flex;
+        justify-content: space-around;
+        padding: 1.80vw;
+        margin: 0 0 100px 0;
+        flex-wrap: wrap;
+
+        img {
+            width: 500px;
+            height: 500px;
+            border-radius: 23px;
+        }
+        div.info {
+            width: 470px;
+
+            h2 {
+                color: #292B39;
+                font-family: Poppins;
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 32px;
+            }
+            p.descript {
+                color: rgba(136, 136, 136, 0.70);
+                font-family: Poppins;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; 
+            }
+            div.persons {
+                display: flex;
+                justify-content: space-between;
+
+                div.person {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    img {
+                        width: 65px;
+                        height: 65px;
+                    }
+                    div.info-person {
+                        position: relative;
+                        bottom: -10px;
+                        .gh {
+                            color: #8D8D8D;
+                            font-family: Poppins;
+                            font-size: 17px;
+                            font-weight: 400;
+                            line-height: 100%;
+                            margin: 0;
+                        }
+                        h4.name-person {
+                            color: black;
+                            font-family: Poppins;
+                            font-size: 25.5px;
+                            font-weight: 500;
+                            line-height: 0px;
+                            position: relative;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+            .info-bottom {
+                justify-content: space-between;
+                display: flex;
+                
+                div.current {
+                    p {
+                        color: #8D8D8D;
+                        font-family: Poppins;
+                        font-size: 17px;
+                        font-weight: 400;
+                    }
+                    strong {
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        color: #292B39;
+                        font-family: Poppins;
+                        font-size: 33px;
+                        font-weight: 600;
+                        
+                        img {
+                            height: 30px;
+                            width: 25px;
+                        }
+                    }  
+                }
+                div.date {
+                    p {
+                        color: #8D8D8D;
+                        font-family: Poppins;
+                        font-size: 17px;
+                        font-weight: 400;
+                        text-align: right;
+                    }
+                    strong {
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        color: black;
+                        text-align: right;
+                        font-family: Poppins;
+                        font-size: 19px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        
+                    }  
+                }
+            }
+            button {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                align-items: center;
+                gap: 16px;
+                border-radius: 19px;
+                background: #141416;
+                width: 100%;
+                color: white;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 28px;
+                padding: 20px 0;
+                cursor: pointer;
+                border: none;
+                position: relative;
+                top: 0;
+                transition: all 0.5s .1s ease;
+
+                &:hover {
+                    top: -5px;
+                    -webkit-box-shadow: 0px 18px 16px 1px rgba(34, 60, 80, 0.2);
+                    -moz-box-shadow: 0px 18px 16px 1px rgba(34, 60, 80, 0.2);
+                    box-shadow: 0px 18px 16px 1px rgba(34, 60, 80, 0.2);
+                }
+
+                img {
+                    border-radius: 0;
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 666px) {
+    .card#card {
+        padding-left: 0;
+        padding-right: 0;
+        width: 98vw;
+        .place {
+            width: 98vw;
+
+            img[alt='NFT'] {
+                width: 96vw;
+                height: 96vw;
+            }
+            .persons {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

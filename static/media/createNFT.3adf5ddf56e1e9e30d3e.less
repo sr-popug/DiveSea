@@ -1,0 +1,259 @@
+article.createNFT {
+    background: #f9f9f9;
+    h2 {
+        color: #141416;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        width: 80vw;
+        margin-left: 10vw;
+
+        .inputs-col1 {
+            width: 40vw;
+            min-width: 350px;
+            
+            .input {
+                margin-top: 30px;
+
+                div.error {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    height: 30px;
+                    margin-top: 10px;
+                    img {
+                        height: 25px;
+                        width: 25px;
+                    }
+                    p {
+                        color: #ea2d3f;
+                        font-size: 17px;
+                    }
+                }
+
+                h3 {
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 124.5%;
+                }
+                input, textarea {
+                    outline: none;
+                    height: fit-content;
+                    border-radius: 11.526px;
+                    background: #EFEFEF;
+                    width: 100%;
+                    padding: 15px;
+                    color: #141416;
+                    text-align: justify;
+                    font-family: Poppins;
+                    font-size: 13.447px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                    border: none;
+                    text-transform: capitalize;
+
+                    &::placeholder {
+                        color: #9596A6;
+                        font-family: Poppins;
+                        font-size: 13.447px;
+                        font-style: normal;
+                        font-weight: 400;
+                        
+                    }
+                }
+                #description {
+                    height: 130px;
+                }
+            }
+            .royal-size {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                .input {
+                    #royalty {
+                        padding: 15px;
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 124.5%;
+                        background: #EFEFEF;
+                        border-radius: 12px;
+                        outline: none;
+                        border: none;
+    
+                        option {
+                            border: none;
+                        }
+                        
+                    }
+
+                }
+
+            
+            }
+            .price-stock {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                #price-select {
+                    outline: none;
+                    height: fit-content;
+                    width: 80px;
+                    border-radius: 11.526px 0 0 11.526px;
+                    border-right: #DADADA 1px solid;
+                    background: #EFEFEF;
+                    padding: 15px;
+                    color: #141416;
+                    text-align: justify;
+                    font-family: Poppins;
+                    font-size: 13.447px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 100%;
+                    border: none;
+                    text-transform: capitalize;
+                }
+                input#price {
+                    border-radius: 0 11.526px 11.526px 0;
+                    width: 50%;
+                }
+                select#stock-select {
+                    outline: none;
+                    height: fit-content;
+                    width: 80px;
+                    border-radius: 11.526px;
+                    border-right: #DADADA 1px solid;
+                    background: #EFEFEF;
+                    padding: 15px;
+                    color: #141416;
+                    text-align: justify;
+                    font-family: Poppins;
+                    font-size: 13.447px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 100%;
+                    border: none;
+                    text-transform: capitalize;
+                }
+            }
+
+            .toggles {
+                margin-top: 50px;
+                .toogle {
+                    margin-top: 20px;
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h3 {
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 10px;
+                    }
+                    p {
+                        color: #9596A6;
+                        font-family: Poppins;
+                        font-size: 13.447px;
+                        font-weight: 400;
+                    }
+
+                    .switch {
+                        input[type=checkbox]{
+                            height: 0;
+                            width: 0;
+                            visibility: hidden;
+                          }
+                          
+                          label {
+                            cursor: pointer;
+                            text-indent: -9999px;
+                            width: 55px;
+                            height: 30px;
+                            background: grey;
+                            display: block;
+                            border-radius: 100px;
+                            position: relative;
+                          }
+                          
+                          label:after {
+                            content: '';
+                            position: absolute;
+                            top: 1.06px;
+                            left: 1px;
+                            width: 28px;
+                            height: 28px;
+                            background: #fff;
+                            border-radius: 90px;
+                            transition: 0.3s;
+                          }
+                          
+                          input:checked + label {
+                            background: #141416;
+                          }
+                          
+                          input:checked + label:after {
+                            left: calc(100% - 1.5px);
+                            transform: translateX(-100%);
+                          }
+                          
+                          label:active:after {
+                            width: 53px;
+                          }
+                          
+                    }
+                }
+            }
+
+            button {
+                width: 80%;
+                cursor: pointer;
+                height: 60px;
+                border: none;
+                border-radius: 12px;
+                color: #FFF;
+                background-color: #141416;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 100%;
+                padding: 23px;
+                margin-top: 50px;
+                margin-bottom: 150px;
+                position: relative;
+                top: 0;
+                transition: all 0.5s .1s ease;
+
+                &:hover {
+                    top: -5px;
+                    -webkit-box-shadow: 0px 18px 16px 1px rgba(34, 60, 80, 0.2);
+                    -moz-box-shadow: 0px 18px 16px 1px rgba(34, 60, 80, 0.2);
+                    box-shadow: 0px 18px 16px 1px rgba(34, 60, 80, 0.2);
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    article.createNFT#createNFT {
+        form {
+            width: 90vw;
+            margin-left: 1vw;
+
+            .inputs-col1 {
+                width: 90vw;
+                min-width: 200px;
+            }
+        }
+    }
+}
