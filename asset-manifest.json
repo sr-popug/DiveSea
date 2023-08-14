@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DiveSea/static/css/main.38b721a9.css",
-    "main.js": "/DiveSea/static/js/main.8122a868.js",
+    "main.js": "/DiveSea/static/js/main.0dd9e95e.js",
     "static/media/bg-me.png": "/DiveSea/static/media/bg-me.1c2cfb00e710c5269e57.png",
     "static/media/Inter-Regular.ttf": "/DiveSea/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
     "static/media/user.png": "/DiveSea/static/media/user.fad1560a88291f874b2f.png",
@@ -51,10 +51,10 @@
     "static/media/auth.less": "/DiveSea/static/media/auth.70e6b34410341d7d74ad.less",
     "static/media/modalTemplate.less": "/DiveSea/static/media/modalTemplate.a75508e10b406eb64318.less",
     "main.38b721a9.css.map": "/DiveSea/static/css/main.38b721a9.css.map",
-    "main.8122a868.js.map": "/DiveSea/static/js/main.8122a868.js.map"
+    "main.0dd9e95e.js.map": "/DiveSea/static/js/main.0dd9e95e.js.map"
   },
   "entrypoints": [
     "static/css/main.38b721a9.css",
-    "static/js/main.8122a868.js"
+    "static/js/main.0dd9e95e.js"
   ]
 }
